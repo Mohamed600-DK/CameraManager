@@ -9,6 +9,10 @@ find_package(OpenCV CONFIG REQUIRED)
 
 add_library(${CMAKE_PROJECT_NAME}  STATIC src/CameraManager.cpp)
 
+target_compile_definitions( ${CMAKE_PROJECT_NAME}
+    PRIVATE $<$<CONFIG:Debug>:DEBUG_MODE>
+    PRIVATE $<$<CONFIG:Release>:RELEASE_MODE>
+)
 # Add include paths
 target_include_directories( ${CMAKE_PROJECT_NAME}
     PUBLIC
