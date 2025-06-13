@@ -29,6 +29,9 @@ install(TARGETS ${CMAKE_PROJECT_NAME}
 install(DIRECTORY ./include/ DESTINATION include)
 
 if(NOT CAMERA_MANAGER_SKIP_CONFIG)
+    install(TARGETS ${CMAKE_PROJECT_NAME}
+        EXPORT ${CMAKE_PROJECT_NAME}Targets
+    )
     install(EXPORT ${CMAKE_PROJECT_NAME}Targets
         FILE ${CMAKE_PROJECT_NAME}Targets.cmake
         NAMESPACE ${CMAKE_PROJECT_NAME}::
