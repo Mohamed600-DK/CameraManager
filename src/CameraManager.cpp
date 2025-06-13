@@ -244,7 +244,7 @@ class_attribute->att_backend_video_API = cv::CAP_V4L2;
 	{
 
 #ifdef DEBUG_MODE
-		std::cout << "Found Camera at Index: " << static_cast<int>class_attribute->att_camera_id) << std::endl;
+		std::cout << "Found Camera at Index: " << static_cast<int>(class_attribute->att_camera_id) << std::endl;
 #endif
 		// ToDo: Make this In sperted  method
 		//  Set camera properties
