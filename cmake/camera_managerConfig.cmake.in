@@ -1,0 +1,6 @@
+@PACKAGE_INIT@
+
+find_package(OpenCV REQUIRED)
+
+# Import the targets from your install location
+include("${camera_manager_DIR}/camera_managerTargets.cmake")
