@@ -61,15 +61,6 @@ namespace CameraManager
         CAMERA_OPEN,
     } camera_status_t;
 
-    typedef enum actions : uint8_t
-    {
-        NO_ACTION = 0,
-        ACTION_LOCK_SCREEN = 1,
-        ACTION_SIGN_OUT = 2,
-        ACTION_WARNING = 3,
-        ACTION_ERROR = 4
-    } action_t;
-
     typedef enum flag_status : uint8_t
     {
         UNSET = 0,
